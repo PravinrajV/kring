@@ -1,0 +1,272 @@
+{
+  "network": "testnet",
+  "txs": {
+    "deploy+init+delete key circle": "7vmMF1n3gKZnoeo3ARnuVkz2AUeP4cvSZaabTEi5pM4S",
+    "first deposit (m01)": "6SbGjL24aaUrE5zGZQcFXyLAfCcbNw2r9Xf4ZZoY2nK6"
+  },
+  "master": "kring-app.testnet",
+  "token": "tusd.kring-app.testnet",
+  "circle": "circle.kring-app.testnet",
+  "keeper": "keeper.kring-app.testnet",
+  "members": [
+    "m01.kring-app.testnet",
+    "m02.kring-app.testnet",
+    "m03.kring-app.testnet",
+    "m04.kring-app.testnet",
+    "m05.kring-app.testnet",
+    "m06.kring-app.testnet",
+    "m07.kring-app.testnet",
+    "m08.kring-app.testnet",
+    "m09.kring-app.testnet",
+    "m10.kring-app.testnet",
+    "m11.kring-app.testnet",
+    "m12.kring-app.testnet",
+    "m13.kring-app.testnet",
+    "m14.kring-app.testnet",
+    "m15.kring-app.testnet",
+    "m16.kring-app.testnet",
+    "m17.kring-app.testnet",
+    "m18.kring-app.testnet",
+    "m19.kring-app.testnet",
+    "m20.kring-app.testnet"
+  ],
+  "circle_code_hash": "tdBdHVZ5MDKKF3ApuLaapP9vbEQiW38qUkNCttiKbub",
+  "circle_wasm_sha256_b58": "tdBdHVZ5MDKKF3ApuLaapP9vbEQiW38qUkNCttiKbub",
+  "circle_access_keys": 0,
+  "config": {
+    "period_secs": 180,
+    "waiting_periods": 1,
+    "probation_periods": 1,
+    "max_gift_periods": 24,
+    "vouch_window_secs": 1800,
+    "vouch_cooldown_periods": 12,
+    "proposal_secs": 180,
+    "gift_unit": "250000000"
+  },
+  "held_tusd": 7500,
+  "genesis_ns": "1794257809701350526",
+  "checked_at": "2026-11-09T21:00:47.548Z",
+  "live": {
+    "report_sick": "DkecUusU3hNVYQZDmY5gakDwKGkP4R4aDnjLR2tcBr5g",
+    "vouches": [
+      "CsyYSmuGNN3eS2Nit39Lc5WRxWST6VGAHuki57vbtX7e",
+      "rrpYt9N6GyAxM9XSzE7MkhiNZuMdEVtrWuEFSigfMTX"
+    ],
+    "settles": [
+      {
+        "period": 0,
+        "coverage_bps": 10000,
+        "gifts": [],
+        "tx": "7Cpp1wTA7atfwiy82Ldfg3B8yGEG3fNi3eEhqUPwRRx1"
+      },
+      {
+        "period": 1,
+        "coverage_bps": 10000,
+        "gifts": [],
+        "tx": "2CG1ij9WReqqhb3uL4RqP9GU4dgFmpo3S1RMRSSmQee9"
+      },
+      {
+        "period": 2,
+        "coverage_bps": 10000,
+        "gifts": [
+          {
+            "account_id": "m01.kring-app.testnet",
+            "due": "250000000",
+            "paid": "250000000"
+          }
+        ],
+        "tx": "BHrRDqKWRaML4oFGjrsYd8ybc9MedfFei1eSRpM4pjyy"
+      }
+    ],
+    "withdraw": {
+      "tx": "E6byNf9k4eQP6KjXSdRcKdm7TzKg12E7PR9K7zr5jMXL",
+      "received_tusd": 250
+    },
+    "checked_at": "2026-11-09T21:06:13.727Z"
+  },
+  "upgrade": {
+    "from_code_hash": "9mqF54FhvUBqyVrCrkGsV5nFmcHVM6qqih2oJFhUpYNQ",
+    "to_code_hash": "tdBdHVZ5MDKKF3ApuLaapP9vbEQiW38qUkNCttiKbub",
+    "sha256_hex": "0d3988a302c19843331f05be07472a4e8830d6ec1b97b6d7586d12f42462a932",
+    "approvals": [
+      "J8nGDDAPPHSQqbCQ4BhsyR1Spfjj2jYTpVKW2WdpWKGa",
+      "3empGALipgeqWKkUKozAtiGbw7YYR3mMjNdjBh8NqDKV",
+      "5Yim3JUXUq7EXDJkyfHViJrmKNErZnbPT4eeytAKaqmW",
+      "CuJtyMi8EmgFzvoUktEn7BdrCcDPE742QhCqgX9uYvK7",
+      "CBqaBXmJci4xejo5mL7d4ANqNdzNrsJ9EqcaDchJEtfd",
+      "8bLQ4Ts7BXEsVasT4B5HbCqoqg9qr5dzBGJpb1n76uUn",
+      "2LETtRmSN3w8KE89AQCz8Z9AwTGUc94Vqk7Lxh8SiPs8",
+      "9MX7rZS3XpzpbWANBMU2eEawDUZgFito3v7MrnJw7Zyr",
+      "FpYC6po2nroj6J1BYDgKCH9mMDz2NjhnrNBqtBbfgJfc",
+      "3YoRyaDwmhRckWZAeUTDp6BEYNmwmaohAwiKiyvbJSqG",
+      "FhxVnSqnonNTPm5124jt4jPQpTRUJLWV5SABmY31k7gW",
+      "BexiB5Wko9QnFFrKj9F26vdqEqZD3FexeRCBwRB1ZH1A",
+      "6P6MvnCuThf75YxrN7MR74VZJHsnRXPGFjz1c3entWRH"
+    ],
+    "proposal_id": 0,
+    "propose_tx": "FnWpG1icEWyrBSKqwmKi7X1BhpbCQypw13AAd3ziNsas",
+    "execute_tx": "GDuMwS2dXMWruR9PqyMRT2n5yM9MZdMdAhfGVCAF1pfq",
+    "checked_at": "2026-11-09T21:29:54.122Z"
+  },
+  "keeper_gift_settles": [
+    {
+      "period": 3,
+      "coverage_bps": 10000,
+      "gifts": [
+        {
+          "account_id": "m01.kring-app.testnet",
+          "due": "250000000",
+          "paid": "250000000"
+        }
+      ],
+      "tx": "RzbTp9h7iagDQGaBs72qo1Z7u1ZiiWnwW3xNrBa7Bk1"
+    },
+    {
+      "period": 4,
+      "coverage_bps": 10000,
+      "gifts": [
+        {
+          "account_id": "m01.kring-app.testnet",
+          "due": "250000000",
+          "paid": "250000000"
+        }
+      ],
+      "tx": "5vCKsAMHSWak57ssxxCZdSfYNvReWvdTXgKDdsbKo4i2"
+    },
+    {
+      "period": 5,
+      "coverage_bps": 10000,
+      "gifts": [
+        {
+          "account_id": "m01.kring-app.testnet",
+          "due": "250000000",
+          "paid": "250000000"
+        }
+      ],
+      "tx": "7jpgXooNSmRqSvAm1d35tjJuyZx4mftfoDaHpP4wbvty"
+    },
+    {
+      "period": 6,
+      "coverage_bps": 10000,
+      "gifts": [
+        {
+          "account_id": "m01.kring-app.testnet",
+          "due": "250000000",
+          "paid": "250000000"
+        }
+      ],
+      "tx": "8K1iax4jTpNkGVVTFFzR8nhqaMnTA9h9zEXLyTA2Sk98"
+    },
+    {
+      "period": 7,
+      "coverage_bps": 10000,
+      "gifts": [
+        {
+          "account_id": "m01.kring-app.testnet",
+          "due": "250000000",
+          "paid": "250000000"
+        }
+      ],
+      "tx": "9V9qL6X8AEYymKQJWHdfv6ivnJH1gGpWmfaBpCDYT438"
+    },
+    {
+      "period": 8,
+      "coverage_bps": 10000,
+      "gifts": [
+        {
+          "account_id": "m01.kring-app.testnet",
+          "due": "250000000",
+          "paid": "250000000"
+        }
+      ],
+      "tx": "3Eb1mmn78AmMStPzizB3KgZbUGoQFtHkWHWRzSmk3Ttk"
+    },
+    {
+      "period": 9,
+      "coverage_bps": 10000,
+      "gifts": [
+        {
+          "account_id": "m01.kring-app.testnet",
+          "due": "250000000",
+          "paid": "250000000"
+        }
+      ],
+      "tx": "7pPv5vu7Gyza164h2o6EdMHyeKzvpN7jEnZAR3ovvMQW"
+    },
+    {
+      "period": 10,
+      "coverage_bps": 10000,
+      "gifts": [
+        {
+          "account_id": "m01.kring-app.testnet",
+          "due": "250000000",
+          "paid": "250000000"
+        }
+      ],
+      "tx": "4f8eEhqg4vdDCcFoN7DJXhcbFRANZFKuvFaLd1bcsZHd"
+    }
+  ],
+  "runs": [
+    {
+      "claimant": "m01.kring-app.testnet",
+      "started_at": "2026-11-09T21:31:05.468Z",
+      "txs": {
+        "withdraw": "3eBiuUXeCZbuWgZ7BBZhr2kU1oZXjr3kBXMfKYX2UAtZ",
+        "report_recovered": "64VHa7SR38a5HgtAbBxhbGEkGRkYnHq5jd9g69Tw3Rvr"
+      },
+      "withdrawn_tusd": 2000,
+      "books": {
+        "held_tusd": 5250,
+        "token_balance_tusd": 5250,
+        "match": true
+      },
+      "finished_at": "2026-11-09T21:31:15.554Z"
+    },
+    {
+      "claimant": "m06.kring-app.testnet",
+      "started_at": "2026-11-09T21:31:21.216Z",
+      "txs": {
+        "report_sick": "7cTi51EKxrahUM6cN47pXD7Vm5wgUYGQTUSyJNignxzQ",
+        "vouches": [
+          "DsUoRhEYEMXnoPAVDE9ptob4X9vYNsVNboqMJS5fzk9x",
+          "B1SJsmKzGtWPoTecMn6eC92GXCnTMru6nrRXrvgD5VHg"
+        ],
+        "withdraw": "G7BiFveCx9C8kM6rZEBMENN2yBeMFByVkhsv3w2AnYD5",
+        "report_recovered": "BTesm2SFWXopYGB38KRrjAG6khTpu3jiY4SU1gCx5XeD"
+      },
+      "settles": [
+        {
+          "period": 12,
+          "coverage_bps": 10000,
+          "gifts": [
+            {
+              "account_id": "m06.kring-app.testnet",
+              "due": "500000000",
+              "paid": "500000000"
+            }
+          ],
+          "tx": "7W3z4QLZk92bAsTBNBcZyM3XMyz4Kab2QFqvHTeHb3jr"
+        },
+        {
+          "period": 13,
+          "coverage_bps": 10000,
+          "gifts": [
+            {
+              "account_id": "m06.kring-app.testnet",
+              "due": "500000000",
+              "paid": "500000000"
+            }
+          ],
+          "tx": "3iks5nR9Ci13uyZk9VeS2CbaeduH4wJSAzvcpHkNcHBN"
+        }
+      ],
+      "withdrawn_tusd": 1000,
+      "books": {
+        "held_tusd": 4250,
+        "token_balance_tusd": 4250,
+        "match": true
+      },
+      "finished_at": "2026-11-09T21:39:12.096Z"
+    }
+  ]
+}

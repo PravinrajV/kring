@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kring · sick pay for freelancers, paid by their peers (NEAR testnet)</title>
+  <meta name="description" content="Kring is a keyless gift circle on NEAR testnet: freelancers park a small deposit in their own pot, and when one of them is too sick to work, the others send a monthly gift." />
+  <link rel="icon" href="./favicon.svg" />
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="11" fill="none" stroke="currentColor" stroke-width="4"/><circle cx="16" cy="5" r="3" fill="currentColor"/></svg>
+      <div>
+        <h1>Kring</h1>
+        <p class="tag">Sick pay for freelancers, paid by their peers</p>
+      </div>
+    </div>
+    <div class="top-right">
+      <span class="pill warn" title="Nothing here has real value">Testnet · test tokens</span>
+      <span class="pill" id="live"><i class="dot"></i><span>Connecting…</span></span>
+      <button id="wallet" class="btn ghost">Connect wallet</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="banner" id="banner" hidden></section>
+
+    <section class="stats" id="stats">
+      <div class="stat"><span class="k">In members' pots</span><b id="s-pots">–</b><span class="s" id="s-pots-sub">&nbsp;</span></div>
+      <div class="stat"><span class="k">Last coverage</span><b id="s-cov">–</b><span class="s" id="s-cov-sub">&nbsp;</span></div>
+      <div class="stat"><span class="k">Members</span><b id="s-members">–</b><span class="s" id="s-members-sub">&nbsp;</span></div>
+      <div class="stat"><span class="k" title="Demo periods stand in for months">Period (demo month)</span><b id="s-period">–</b><span class="s" id="s-period-sub">&nbsp;</span></div>
+      <div class="stat proof"><span class="k">Who holds the keys</span><b id="s-keys">–</b><span class="s" id="s-keys-sub">&nbsp;</span></div>
+    </section>
+
+    <div class="grid">
+      <section class="card members">
+        <div class="card-h"><h2>The circle</h2><span class="muted" id="circle-id"></span></div>
+        <table>
+          <thead><tr><th>Member</th><th class="r">Level</th><th class="r">Gift if sick</th><th class="r">Pot</th><th>Still theirs</th><th>Status</th></tr></thead>
+          <tbody id="members"></tbody>
+        </table>
+      </section>
+
+      <div class="side">
+        <section class="card me" id="me">
+          <div class="card-h"><h2>You</h2></div>
+          <div id="me-body"><p class="muted">Connect a NEAR testnet wallet to see your pot. Reading the circle needs no wallet.</p></div>
+        </section>
+
+        <section class="card">
+          <div class="card-h"><h2>Sick reports</h2><span class="muted">vouchers drawn by the contract</span></div>
+          <div id="reports"></div>
+        </section>
+
+        <section class="card">
+          <div class="card-h"><h2>Gifts paid</h2><span class="muted" id="settle-note"></span></div>
+          <div id="settlements"></div>
+        </section>
+
+        <section class="card">
+          <div class="card-h"><h2>Member votes</h2><span class="muted">no single admin; any change needs a member vote</span></div>
+          <div id="proposals"></div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p><b>The chain replaces the bank, the board and the admin, not the trust.</b> Circles are invite-only: members admit each other by vote, and any one member can veto. The random draw only stops a claimant picking their own vouchers.</p>
+    <p>Testnet prototype with test tokens; any real deployment needs legal review in each jurisdiction. Not insurance: nothing is promised, and gifts scale down when pots run low. Members need a NEAR wallet today; sponsored gas comes next.</p>
+    <p class="muted">Inspired by Dutch gift circles (schenkkringen, such as Broodfonds). Not affiliated with them. Every number on this page is read live from NEAR testnet over public RPC. <span id="rpc-note"></span></p>
+  </footer>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+target/
+e2e/node_modules/
+e2e/.sandbox/
+ui/node_modules/
+ui/dist/
+*.wasm.tmp
+.env
+.env.*
+# The submission payload holds personal data (email, payout account). Never commit it.
+submission-draft.json
+submission-payload*.json
+node_modules/
+# Keys never live in the repo. The testnet scripts read them from 1Password at run time.
+.near-credentials/
+*.key
+*.pem
+*-key.json

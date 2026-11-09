@@ -1,0 +1,13 @@
+{
+  "name": "kring-e2e",
+  "private": true,
+  "type": "module",
+  "description": "End-to-end run of a Kring circle on a local NEAR sandbox. No accounts or keys needed.",
+  "scripts": {
+    "e2e": "node sandbox-demo.mjs"
+  },
+  "dependencies": {
+    "binaryen": "132.0.0",
+    "near-workspaces": "5.0.0"
+  }
+}
