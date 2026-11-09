@@ -43,11 +43,15 @@ async function rpc(method, p) {
   }
   throw last;
 }
+// Every read in one refresh is pinned to the same final block, so totals compared across calls
+// (like the books check) can't straddle a transaction.
+let atBlock = null;
+const ref = () => (atBlock ? { block_id: atBlock } : { finality: 'final' });
 const view = async (contract, method, args = {}) => {
-  const r = await rpc('query', { request_type: 'call_function', finality: 'final', account_id: contract, method_name: method, args_base64: btoa(JSON.stringify(args)) });
+  const r = await rpc('query', { request_type: 'call_function', ...ref(), account_id: contract, method_name: method, args_base64: btoa(JSON.stringify(args)) });
   return JSON.parse(new TextDecoder().decode(new Uint8Array(r.result)));
 };
-const query = (request_type, account_id) => rpc('query', { request_type, finality: 'final', account_id });
+const query = (request_type, account_id) => rpc('query', { request_type, ...ref(), account_id });
 
 // ---------- state ----------
 let S = null;        // last chain snapshot
@@ -58,6 +62,7 @@ let signedIn = null;
 me = PREVIEW;
 
 async function load() {
+  atBlock = (await rpc('block', { finality: 'final' })).header.height;
   const [c, members, reports, keys, acct] = await Promise.all([
     view(CIRCLE, 'get_circle'), view(CIRCLE, 'get_members'), view(CIRCLE, 'get_reports'),
     query('view_access_key_list', CIRCLE), query('view_account', CIRCLE),
@@ -78,7 +83,7 @@ async function load() {
     ]);
     mine = { tok, reg, near: near?.amount ?? '0', member: members.find((m) => m.account_id === me) || null };
   }
-  S = { c, members, reports, keys: keys.keys, codeHash: acct.code_hash, block: keys.block_height, settlements, proposals, held, balance, mine, at: Date.now() };
+  S = { c, members, reports, keys: keys.keys, codeHash: acct.code_hash, block: atBlock, settlements, proposals, held, balance, mine, at: Date.now() };
   render();
 }
 
