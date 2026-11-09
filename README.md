@@ -9,7 +9,7 @@ Freelancers don't get sick pay. Kring lets a small circle of freelancers who kno
 - **Wallets:** members need a NEAR wallet today and pay their own (tiny) gas. Sponsored gas comes next.
 - **Inspiration:** Dutch gift circles (schenkkringen, such as Broodfonds), where 20 to 50 self-employed people already do this offline. Kring borrows the idea only. It isn't affiliated with any of them.
 - **Live UI:** https://pravinrajv.github.io/kring/ reads the testnet circle in real time. It's read-only unless a member connects their own wallet.
-- **Demo video (2:42):** https://youtu.be/78caGBwfe0w walks through the live testnet circle, a sick report, the two vouchers and the gifts.
+- **Demo video (2:42):** https://youtu.be/78caGBwfe0w
 - **Built by:** Pravinraj Vincent, independent developer, for NEAR HACKATHON (Nov 2026). Tracks: Social Money, Real-World Money.
 
 ## Try it (do X, see Y)
