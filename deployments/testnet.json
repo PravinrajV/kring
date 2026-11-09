@@ -301,6 +301,40 @@
         "match": true
       },
       "finished_at": "2026-11-09T22:21:37.828Z"
+    },
+    {
+      "claimant": "m14.kring-app.testnet",
+      "started_at": "2026-11-09T22:25:47.757Z",
+      "txs": {
+        "report_sick": "9A1K6PBcdFjxxu7Vxigd5g4ddDrt6VkVp2NjR886xVCE",
+        "vouches": [
+          "CtKFC24XRLXh5QaSoLRM8swhC7vsXXs97SfKbzzxA1D1",
+          "2jTpRMVfPKNsuvHmWzxnubU9irmaWwKr9QUuji9Fqt4M"
+        ],
+        "withdraw": "4SVvTrtHdwmg3UoXPAdYceQsN1rmJsAC5wzw7SA2pt11",
+        "report_recovered": "5yFG62Q1qEsHHArqmXvzrApc7944xqSqSXCEDGidpyxv"
+      },
+      "settles": [
+        {
+          "period": 30,
+          "coverage_bps": 10000,
+          "gifts": [
+            {
+              "account_id": "m14.kring-app.testnet",
+              "due": "500000000",
+              "paid": "500000000"
+            }
+          ],
+          "tx": "E5Bovm6GLS2Vsq6E1ZendidLy6K2jZHa8vDuaw9Mwm93"
+        }
+      ],
+      "withdrawn_tusd": 500,
+      "books": {
+        "held_tusd": 19500,
+        "token_balance_tusd": 19500,
+        "match": true
+      },
+      "finished_at": "2026-11-09T22:30:06.790Z"
     }
   ]
 }
